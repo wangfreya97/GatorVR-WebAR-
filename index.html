@@ -7,11 +7,15 @@
 
   <a-scene embedded arjs>
 
-    <!-- create your content here. just a box for now -->
-    <a-box position='0 0.5 0' material='opacity: 0.5;'></a-box>
+    <!-- Our Assets -->
+    <a-assets>
+      <video type="video/mp4" id="video-src" muted autoplay loop="true" src="./assets/SampleVideo30s.mp4" webkit-playsinline playsinline controls></video>
+    </a-assets>
 
     <!-- define a camera which will move according to the marker position -->
-    <a-marker-camera preset='hiro'></a-marker-camera>
+    <a-marker-camera preset='hiro'>
+      <a-video id="video-screen" src="#video-src" rotation="-90 0 0" width="4" height="3" play="true"></a-video>
+    </a-marker-camera>
     
   </a-scene>
 </body>

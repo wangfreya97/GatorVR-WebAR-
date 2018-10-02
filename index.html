@@ -19,7 +19,7 @@
       <video type="video/mp4" id="video-src" muted autoplay loop="true" src="./assets/SampleVideo30s.mp4" webkit-playsinline playsinline controls></video>
     </a-assets>
     <!-- define a camera which will move according to the marker position -->
-    <a-marker preset='hiro'>
+    <a-marker preset='hiro' id="marker">
       <a-video vidhandler id="video-screen" src="#video-src" rotation="-90 0 0" width="4" height="3" play="true"></a-video>
         <!-- <a-box position='0 0.5 0' material='opacity: 0.5'></a-box> -->
       <!-- a-video goes here -->
